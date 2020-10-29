@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'bootstrap';
+    src: url('./fonts/glyphicons-halflings-regular.ttf'); 
+    font-style: normal;
+    font-weight: 100;
+}
+
 * {
+	font-family: "arial narrow" ;
     margin: 0;
     padding: 0;
 }
