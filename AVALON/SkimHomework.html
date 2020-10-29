@@ -60,6 +60,7 @@
 					$(document).ready(function(){
 						
 						$(".btn-primary").click(function(){
+							
 							var num = $(this).attr("aria-controls");
 							//var num_length = num.length;
 							//console.log('num = ' + num.substring(num_length-2,num_length));
@@ -68,12 +69,20 @@
 						});
 						
 					});
+
 				</script>
 				
 				
 				<div class="col-md-3" id="lesson-list">
 					
 					<div class="row" id="title">LESSON</div>
+					
+					<div class="row">
+						
+						<a class="btn btn-primary" role="button" data-parent="#accordion" data-toggle="collapse" href="#" aria-expanded="true" aria-controls="none" onclick="$('.collapse').collapse('toggle');">
+						  展示全部課程作業
+						</a>
+					</div>
 					
 					<div class="row">
 						
@@ -150,79 +159,81 @@
 									
 									<div class="col-md-3" id="homework-title">date</div>
 									<div class="col-md-3" id="homework-title">theme</div>
-									<div class="col-md-offset-6" id="homework-title">details</div>
+									<div class="col-md-6" id="homework-title">details</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
+									
+									
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 								<div class="row">
 									
 									<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 									<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-									<div class="col-md-offset-6" id="homework-information">#informations#</div>
+									<div class="col-md-6" id="homework-information">#informations#</div>
 								</div>
 							</div>
 							  
@@ -241,79 +252,79 @@
 						    		
 						    		<div class="col-md-3" id="homework-title">date</div>
 						    		<div class="col-md-3" id="homework-title">theme</div>
-						    		<div class="col-md-offset-6" id="homework-title">details</div>
+						    		<div class="col-md-6" id="homework-title">details</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    </div>
 							
@@ -331,13 +342,13 @@
 						    		
 						    		<div class="col-md-3" id="homework-title">date</div>
 						    		<div class="col-md-3" id="homework-title">theme</div>
-						    		<div class="col-md-offset-6" id="homework-title">details</div>
+						    		<div class="col-md-6" id="homework-title">details</div>
 						    	</div>
 						    	<div class="row">
 						    		
 						    		<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    		<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    		<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    		<div class="col-md-6" id="homework-information">#informations#</div>
 						    	</div>
 						    	
 						    </div>
@@ -353,13 +364,13 @@
 						    	
 						    	<div class="col-md-3" id="homework-title">date</div>
 						    	<div class="col-md-3" id="homework-title">theme</div>
-						    	<div class="col-md-offset-6" id="homework-title">details</div>
+						    	<div class="col-md-6" id="homework-title">details</div>
 						    </div>
 						    <div class="row">
 						    	
 						    	<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    	<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    	<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    	<div class="col-md-6" id="homework-information">#informations#</div>
 						    </div>
 						  </div>
 						</div>
@@ -372,13 +383,13 @@
 						 	
 						 	<div class="col-md-3" id="homework-title">date</div>
 						 	<div class="col-md-3" id="homework-title">theme</div>
-						 	<div class="col-md-offset-6" id="homework-title">details</div>
+						 	<div class="col-md-6" id="homework-title">details</div>
 						 </div>
 						 <div class="row">
 						 	
 						 	<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						 	<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						 	<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						 	<div class="col-md-6" id="homework-information">#informations#</div>
 						 </div>
 						</div>
 						
@@ -391,13 +402,13 @@
 						    	
 						    	<div class="col-md-3" id="homework-title">date</div>
 						    	<div class="col-md-3" id="homework-title">theme</div>
-						    	<div class="col-md-offset-6" id="homework-title">details</div>
+						    	<div class="col-md-6" id="homework-title">details</div>
 						    </div>
 						    <div class="row">
 						    	
 						    	<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    	<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    	<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    	<div class="col-md-6" id="homework-information">#informations#</div>
 						    </div>
 						  </div>
 						</div>
@@ -411,13 +422,13 @@
 						    	
 						    	<div class="col-md-3" id="homework-title">date</div>
 						    	<div class="col-md-3" id="homework-title">theme</div>
-						    	<div class="col-md-offset-6" id="homework-title">details</div>
+						    	<div class="col-md-6" id="homework-title">details</div>
 						    </div>
 						    <div class="row">
 						    	
 						    	<div class="col-md-3" id="homework-information">#yyyy-mm-dd#</div>
 						    	<div class="col-md-3" id="homework-information">#class-id-theme#</div>
-						    	<div class="col-md-offset-6" id="homework-information">#informations#</div>
+						    	<div class="col-md-6" id="homework-information">#informations#</div>
 						    </div>
 						  </div>
 						</div>

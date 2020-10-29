@@ -21,6 +21,8 @@ body {
 	
 	/* overflow-x: hidden; */
 }
+
+
 a:link,a:visited{
 	font-size: 0.8em;
 	font-weight: 400;
@@ -29,11 +31,20 @@ a:link,a:visited{
 	padding: 6px;
 	text-decoration: none;
 }
+
 a:hover,a:active{
 	font-size: 0.8em;
 	color: dimgray;
 	
 }
+
+
+::selection {
+	background: #26a69a;
+	color: #ffffff;
+}
+
+
 #mainbody {
 	min-width: 1000px;
 	
@@ -179,10 +190,18 @@ a:hover,a:active{
 
 
 #homework-information{
-	height: 20px;
-	max-height: 20px;
+	height: 120px;
+	max-height: 120px;
+	border-radius: 5px;
+	
+	color: #242424;
+	line-height: 40px;
 }
 
+#homework-information:hover{
+	background-color: #383838;
+	color: #eaeaea;
+}
 
 #calen{
 	position: absolute;
