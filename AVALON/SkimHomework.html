@@ -11,6 +11,7 @@
 		<link rel="stylesheet"  href="css/bootstrap.css" />
 		<link rel="stylesheet"  href="css/style_skimHomework.css"/>
 		
+		<link rel="shortcut icon" href="img/favicon.ico"/>
 		<title>作業瀏覽-avalon</title>
 	</head>
 	<body>
@@ -21,6 +22,14 @@
 		<!-- bootstrap js -->
 		<script src="js/bootstrap.js" ></script>
 		
+		
+		
+		<!-- 手机适配 -->
+		<script>
+			if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+			    window.location.href = "SkimHomework-phone.html";     //手机
+			 } 
+		</script>
 		<!-- 100% width -->
 		<div class="container-fluid" id="mainbody">
 			
@@ -28,7 +37,7 @@
 			
 			<div class="row" id="nav">
 				
-				<img src="img/logo%20黑白.png" alt="" onclick="window.open('index.html')"/>
+				<img src="img/logo%20黑白.png" alt="" onclick="window.location.href='index.html'"/>
 				
 				
 				
@@ -590,6 +599,11 @@
 			    </div>
 			  </div>
 			</div>
+		</div>
+		
+		<div class="owner">
+			<a href="https://github.com/THUAvalonProject">©Copyright: Avalon project group</a>
+			
 		</div>
 	</body>
 </html>
