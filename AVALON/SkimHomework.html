@@ -11,7 +11,7 @@
 		<link rel="stylesheet"  href="css/bootstrap.css" />
 		<link rel="stylesheet"  href="css/style_skimHomework.css"/>
 		
-		<link rel="shortcut icon" href="img/favicon.ico"/>
+		<link rel="shortcut icon" href="img/logo-white.ico"/>
 		<title>作業瀏覽-avalon</title>
 	</head>
 	<body>
@@ -41,9 +41,9 @@
 				
 				
 				
-				<img class="user_head" src="img/mine_select.png" alt=""/>
+				<img class="user_head" src="img/用户.svg" alt="" onclick="activeLoginBox()"/>
 				
-				<p class="user_name" onclick="">未登录</p>
+				<p class="user_name" onclick="activeLoginBox()">未登录</p>
 				
 				
 			</div>
@@ -650,5 +650,29 @@
 			<a href="https://github.com/THUAvalonProject">©Copyright: Avalon project group</a>
 			
 		</div>
+		<!-- 登陆界面 -->
+		<div id="mask" onclick="hideLoginBox()"></div>
+		<style>
+			#mask{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-color: #000000;
+				opacity: 0.8;
+				visibility: hidden
+			}
+		</style>
+		<iframe align="center" width="400" height="481" src="login.html"  frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" class="modal-box" style="position: absolute;visibility: visible;"></iframe>
+		<script>
+			$('.modal-box').hide();
+			function activeLoginBox(){
+				document.getElementById('mask').style.visibility = 'visible';
+				$('.modal-box').show();
+			}
+			function hideLoginBox(){
+				document.getElementById('mask').style.visibility = 'hidden';
+				$('.modal-box').hide();
+			}
+		</script>
 	</body>
 </html>
