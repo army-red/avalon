@@ -4729,4 +4729,9 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
+    <error-page>
+        <error-code>404</error-code>
+        <location>/404.html</location> <!--定义的页面，必须以“/”开头-->
+        <location>/404.jsp</location>
+    </error-page>
 </web-app>
