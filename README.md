@@ -1,2 +1,2 @@
 # avalon
-html project
+请转到master branch
